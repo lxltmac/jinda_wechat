@@ -1,0 +1,28 @@
+<!--setting.wxml-->
+<import src="cell.wxml"/>
+<view>
+  <swiper class='swiper' indicator-dots='true' autoplay='true' interval='5000' duration='1000'>
+    <block wx:for="{{movies}}" wx:for-index="index">
+      <swiper-item>
+        <image src='{{item.url}}' class='slide-image' mode='aspectFill'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="icons-row">
+    <block wx:for="{{icons}}" wx:for-index="index">
+      <image src='{{item.url}}' class='icon-image' mode='aspectFill'></image>
+      <text class="icons-text">{{item.text}}</text>
+    </block>
+  </view>
+  <view class='pages-container'>
+    <scroll-view scroll-y="true" class='pages-wrapper'>
+      <view wx:for="{{pageItems}}" wx:key="{{text}}">
+        <view class='pages-row'>
+          <template is="cell" data="{{...item[0],cellHeight}}"/>
+          <template is="cell" data="{{...item[1],cellHeight}}"/>
+          <template is="cell" data="{{...item[2],cellHeight}}"/>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

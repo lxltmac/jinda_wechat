@@ -1,0 +1,32 @@
+<!--help.wxml-->
+<view>    
+  <view class="container">
+   <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+    </view>
+  </view>   
+  <!-- <view class='section'> -->
+    <!-- <view class='section_title'></view> -->
+    <!-- <view class='flex-wrap' style='flex-direction:row;'> -->
+      <view class='flex-item my_order' bindtap='my_order'>我的订单
+        <image class="guid" src='../../image/guid.png'></image>
+      </view>
+      <view class='flex-item my_shopping' bindtap='my_shopping'>购物车
+        <image class="guid" src='../../image/guid.png'></image>
+      </view>
+      <view class='flex-item my_youhui' bindtap='my_voucher'>我的优惠券
+        <image class="guid" src='../../image/guid.png'></image>
+      </view>
+      <view class='flex-item my_huiyuan' bindtap='my_member'>我的会员卡
+        <image class="guid" src='../../image/guid.png'></image>
+      </view>
+      <view class='flex-item my_kefu' bindtap='callPone'>联系客服
+        <image class="guid" src='../../image/guid.png'></image>
+      </view>
+    <!-- </view> -->
+  <!-- </view>   -->
+</view>

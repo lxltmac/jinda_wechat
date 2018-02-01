@@ -1,0 +1,11 @@
+/* pages/index/new.wxss */
+/* .showmian{ background: #eeeeee;margin: 0 auto; width: 100%; padding: 10px 0px;}
+.showmian view{ text-align: center; font-size: 30rpx; color: #646464;}
+.hovercolor{ color: #17a5ff !important;}
+.hovertxt{ color: #17a5ff !important;}
+.w25{display:inline-block;}
+.w20{display:inline-block; width:20%;word-wrap : break-word ;word-break:break-all; text-align: center;}
+.scrool-left{position: relative; background: #eeeeee;}
+.leftjiantou{position: absolute; top:38%; right: 1%;}
+.leftjiantou image{ width: 10px;}
+.lefts{ left: 1%; top:38%;} */

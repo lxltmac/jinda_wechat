@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/setting/setting",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/index/new",
+    "pages/help/help",
+    "pages/classify/classify",
+    "pages/classifies/classifies",
+    "pages/shopping/shopping",
+    "pages/voucher/voucher",
+    "pages/member/member",
+    "pages/car/car"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "犀利哥哥",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#FBFBFB",
+    "list": [
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "首页",
+        "iconPath": "image/icon.png",
+        "selectedIconPath": "image/icon_d.png"
+      },
+      {
+        "pagePath": "pages/classifies/classifies",
+        "text": "分类",
+        "iconPath": "image/fenlei.png",
+        "selectedIconPath": "image/fenlei_d.png"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "text": "购物车",
+        "iconPath": "image/shopping.png",
+        "selectedIconPath": "image/shopping_d.png"
+      },
+      {
+        "pagePath": "pages/help/help",
+        "text": "我的",
+        "iconPath": "image/my.png",
+        "selectedIconPath": "image/my_d.png"
+      }
+    ]
+  }
+}

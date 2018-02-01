@@ -1,0 +1,15 @@
+<view class='con'>
+  <!--顶部导航栏-->
+  <view class='swiper-tab'>
+    <view wx:for="{{navTab}}" class="tab-item {{currentTab==index ? 'on' : ''}}" data-current="{{index}}"  bindtap='swichNav'>
+      {{item.name}}
+    </view> 
+  </view>
+
+  <!--内容主体-->
+  <scroll-view scroll-y="true" current='{{currentTab}}' duration='200' style="height:{{winHeight - 31}}px" bindchange='swiperChange'>
+      <view class='s_item' hidden="{{currentTab==0 ? '' : true}}" style="height:{{(winHeight - 31)/2}}px">您暂时还没有会员卡</view>
+      <view class='s_item' hidden="{{currentTab==1 ? '' : true}}" style="height:{{(winHeight - 31)/2}}px">您暂时还没有会员卡1</view>
+      <view class='s_item' hidden="{{currentTab==2 ? '' : true}}" style="height:{{(winHeight - 31)/2}}px">您暂时还没有会员卡2</view>
+  </scroll-view>
+</view>

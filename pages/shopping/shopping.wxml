@@ -1,0 +1,32 @@
+<view class='con'>
+  <!--顶部导航栏-->
+  <view class='swiper-tab'>
+     <!-- <view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current='0' bindtap='swichNav'>全部</view>
+    <view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current='1' bindtap='swichNav'>待付款</view>
+    <view class="tab-item {{currentTab==2 ? 'on' : ''}}" data-current='2' bindtap='swichNav'>待发货</view>
+    <view class="tab-item {{currentTab==3 ? 'on' : ''}}" data-current='3' bindtap='swichNav'>待收货</view>
+    <view class="tab-item {{currentTab==4 ? 'on' : ''}}" data-current='4' bindtap='swichNav'>已完成</view>  -->
+    <view wx:for="{{navTab}}" class="tab-item {{currentTab==index ? 'on' : ''}}" data-current="{{index}}"  bindtap='swichNav'>
+      {{item.name}}
+    </view> 
+  </view>
+
+  <!--内容主体-->
+  <scroll-view scroll-y="true" current='{{currentTab}}' duration='200' style="height:{{winHeight - 31}}px" bindchange='swiperChange'>
+    <!-- <swiper-item> -->
+      <view class='s_item' hidden="{{currentTab==0 ? '' : true}}" style="height:{{(winHeight - 31)/2}}px">您暂时还没有订单</view>
+    <!-- </swiper-item> -->
+    <!-- <swiper-item> -->
+      <view class='s_item' hidden="{{currentTab==1 ? '' : true}}" style="height:{{(winHeight - 31)/2}}px">您暂时还没有订单1</view>
+    <!-- </swiper-item> -->
+    <!-- <swiper-item> -->
+      <view class='s_item' hidden="{{currentTab==2 ? '' : true}}" style="height:{{(winHeight - 31)/2}}px">您暂时还没有订单2</view>
+    <!-- </swiper-item> -->
+    <!-- <swiper-item> -->
+      <view class='s_item' hidden="{{currentTab==3 ? '' : true}}" style="height:{{(winHeight - 31)/2}}px">您暂时还没有订单3</view>
+    <!-- </swiper-item> -->
+    <!-- <swiper-item> -->
+      <view class='s_item' hidden="{{currentTab==4 ? '' : true}}" style="height:{{(winHeight - 31)/2}}px">您暂时还没有订单4</view>
+    <!-- </swiper-item> -->
+  </scroll-view>
+</view>

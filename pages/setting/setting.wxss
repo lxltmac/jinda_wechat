@@ -1,0 +1,98 @@
+/* pages/index/setting.wxss */
+.swiper{
+  height: 400rpx;
+  width: 100%;
+}
+.swiper image{
+  height: 100%;
+  width: 100%;
+}
+.icons-row{
+  display: flex;  
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  justify-content: space-around;
+  align-items: center;
+  height: 74px;
+}
+.icon-image{
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  position: relative
+}
+.icons-text{
+  display: flex;  
+  margin-top: 60px;  
+  font-size: 10px;
+  margin-left: -70px;  
+}
+.pages-container {  
+  height: auto;  
+  display: flex;  
+  flex-direction: column;  
+  box-sizing: border-box;  
+  margin-top: 10px;
+  padding-top: 10rpx;  
+  padding-bottom: 10rpx;  
+}  
+  
+.pages-title-bg {  
+  width: 100%;  
+}  
+  
+.pages-wrapper {  
+    
+}  
+  
+  
+.pages-row {  
+  width: 100%;  
+  display: flex;  
+  flex-direction: row;  
+  justify-content: space-around;  
+}  
+  
+.pages-item {  
+  position: relative;  
+  padding: 10rpx;  
+  width: 33%;  
+  background-color: #fff;  
+  border: #fff solid 0.1px;  
+}  
+  
+.pages-icon-wrapper {  
+  display: flex;  
+  justify-content: space-around;  
+  align-items: center;  
+  margin: 10rpx;  
+  /* border-radius: 30%;   */
+  height: 75%;  
+  background:#00CD0D;  
+}  
+  
+.pages-icon-wrapper-no-bg {  
+  display: flex;  
+  justify-content: space-around;  
+  align-items: center;  
+  margin: 10rpx;  
+  height: 75%;
+
+}  
+  
+.pages-icon {  
+  width: 180rpx;  
+  height: 180rpx;  
+}  
+
+.pages-text-wrapper {  
+  text-align: center;  
+  font-size: 12px;
+}  
+  
+.pages-text {  
+  font-weight: bolder;  
+  font-size: 12px; 
+
+}  
